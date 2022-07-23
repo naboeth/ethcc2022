@@ -35,6 +35,21 @@ module.exports = {
    */
 
   networks: {
+    xdai: {
+      provider: function() {
+            return new HDWalletProvider(
+           process.env.MNEMONIC,
+           "https://rpc.gnosischain.com")
+      },
+      network_id: 100,
+      gas: 500000,
+      gasPrice: 1000000000
+},
+development: {
+      host: "127.0.0.1",
+      port: 8545,
+      network_id: "*" // Match any network id
+}
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache, geth, or parity) in a separate terminal
