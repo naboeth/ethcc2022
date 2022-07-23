@@ -1,4 +1,4 @@
-# ethcc2022
+# Cook at home @EthCChack
 
 Team:
 
