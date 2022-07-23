@@ -1,6 +1,74 @@
 # Cook at home @EthCChack
 
+** This DApp aims to motivate people to cook for themselves instead of ordering food - Lock some ETH and bet woth yourself! If you loose, your stake will be donated. ** 
+
 Team:
+
+### Inspiration / Idea 
+
+### What it does
+
+### Walktrough
+1. 
+2. 
+
+### Resources
+
+- Link to the DApp: [https://github.com/naboeth/ethcc2022](https://github.com/naboeth/ethcc2022) (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))
+- Recorded video using the DApp: 
+- Presentation of the idea: 
+- Deployed contracts: 
+
+### How we built it
+
+### Challenges we ran into
+
+### Accomplishments that we're proud of
+
+### What we learned
+
+### Roadmap
+
+## How to run the DApp locally using truffle/ganache:
+
+1. Clone the repository
+
+2. Install truffle with (make sure you have NodeJS v12 or later)
+
+```
+npm install -g truffle
+```
+
+3. Install ganache GUI https://trufflesuite.com/ganache/ or CLI via
+
+```
+npm install -g ganache-cli
+```
+
+4. Start ganache and make sure, you have the right "host" declared in your "truffle.config" file
+
+5. Run
+
+```
+npm install
+```
+
+6. To compile and migrate the contracts, run
+
+```
+truffle compile
+truffle migrate
+```
+
+7. Then start the DApp via
+
+```
+npm run dev
+```
+
+8. If this doesn't work, try to open the "index.html" file with live server.
+
+
 
 Project Description:
 
