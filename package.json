@@ -21,5 +21,9 @@
   "homepage": "https://github.com/naboeth/ethcc2022#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "truffle-hdwallet-provider": "^1.0.17"
   }
 }
