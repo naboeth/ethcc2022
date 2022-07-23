@@ -10,7 +10,7 @@ We will use smart contracts timelocks.
 (We can use DAO for cooking competition with people voting for the best meal picture)***
 (We could later support blockhain-based supply chain management retailers that could provide the ingredients)***
 
-Recipes come from professional cooks or honorable amateurs that put their receipes as NFTs on the dApp. (People can buy the NFT recipes)***
+Recipes come from professional cooks or honorable amateurs who put their recipes as NFTs on the dApp. (People can buy the NFT recipes and collect them)***
 We have a database of original recipes, ingredient lists, cooking instructions, pictures, etc.
 
 In order to verify that people actually cook and eat their meals from home, we use:
@@ -18,6 +18,7 @@ In order to verify that people actually cook and eat their meals from home, we u
 - EFIX, IPTC and XMP metadata of pictures to verify the picture orginin and characteristics (+ check for any editing/photoshoping)
 - We use a simple code generator and ask people to handwrite the code and take a picture of both the meal and the code written. An AI will also detect and find out if the code is the one sent to the user.
 
-We believe thoss three verification steps should ensure a satisfactory amount of fraud detection.
+We believe those three verification steps should ensure a satisfactory amount of fraud detection.
+(We could also develop a "Proof-ofCook" protocol based on community voting.)***
 
 On top of that, if someone fails to cook a meal, the incentive can go to a food sustainability or hunger-fighting NGO.
