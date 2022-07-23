@@ -24,12 +24,12 @@ In a "bet with yourself" manner, users can deposit an amount of ETH in our DApp:
 If the user does not upload a valid photo in time, their stake remains in the contract and will later be donated to a charity. 
 
 ### Walkthrough
-1. _Connect your MetaMask wallet_ on the preferred chain 
-2. _Choose a stake:_ We currently offer 0.005 ETH, 0.01 ETH or 0.02 ETH (about $7, $15 or $30 at the moment) and sign a transaction to deposit the amount to the smart contract
-3. You will get a randomly generated 6-digit _code to write down on a piece of paper_ 
-4. From this point of time, you have _1 week to cook a meal for yourself_. If you do so, make a picture of the meal and put the paper with the code next to it
-5. Go back to our DApp and _load up your photo_. Then you will be able to returned your stake
-6. When the week is over, but no photo has been uploaded, you lose your stake. We will collect the stakes and _donate them to charity_
+1. **Connect your MetaMask wallet** on the preferred chain 
+2. **Choose a stake:** We currently offer 0.005 ETH, 0.01 ETH or 0.02 ETH (about $7, $15 or $30 at the moment) and sign a transaction to deposit the amount to the smart contract
+3. You will get a randomly generated 6-digit **code to write down on a piece of paper** 
+4. From this point of time, you have **1 week to cook a meal for yourself**. If you do so, make a picture of the meal and put the paper with the code next to it
+5. Go back to our DApp and **load up your photo**. Then you will be able to returned your stake
+6. When the week is over, but no photo has been uploaded, you lose your stake. We will collect the stakes and **donate them to charity**
 
 ### Resources
 
@@ -42,8 +42,8 @@ If the user does not upload a valid photo in time, their stake remains in the co
 
 - The DApp was built on Ethereum with Truffle/Ganache and Infura 
 - _We deployed the contracts to several chains:_  
-- We implemented a time lock funtion in our contract (which counts Ethereum blocks) to time the seven days to submit a photo 
-- Built-in function to generate a random code by using blockchain-data 
+- _We implemented a time lock funtion in our contract (which counts Ethereum blocks) to time the seven days to submit a photo_ 
+- Built-in function to generate a random code by using blockchain-data
 - The photos are uploaded to IPFS/Filecoin 
 
 ### Challenges we ran into
@@ -61,37 +61,37 @@ If the user does not upload a valid photo in time, their stake remains in the co
 
 ### What we learned
 
-- 
+- Divide tasks and make a schedule
+- Presenting our project to others 
+- How to put data on IPFS/Filecoin 
+- How to implement random-number generation / time lock functions in Solidity 
 
 ### Roadmap
 
 **Photo verification**
-AT to check the validity 
-In order to verify that people actually cook and eat their meals from home, we use:
-- AI detection and recognition of the meal to compare it with original pictures from the recipe owners
-- EFIX, IPTC and XMP metadata of pictures to verify the picture orginin and characteristics (+ check for any editing/photoshoping)
-- We use a simple code generator and ask people to handwrite the code and take a picture of both the meal and the code written. An AI will also detect and find out if the code is the one sent to the user.
+To make sure, the uploaded photo is a valid one (people actually cooked the meal by themselves), we will have to implement a verification mechanism: 
+- We use a simple code generator and ask people to handwrite the code and take a picture of both the meal and the code written. An AI will also detect and find out if the code is the one sent to the user
+- _AI detection and recognition of the meal to compare it with original pictures from the recipe owners_
+- _EFIX, IPTC and XMP metadata of pictures to verify the picture origin and characteristics (+ check for any editing/photoshopping)_
 
-We believe thoss three verification steps should ensure a satisfactory amount of fraud detection.
+These verification steps should ensure a satisfactory amount of fraud detection.
 
 **Cook-to-earn**
-Further inventivization 
-(NFTs and stuff, recipees)
-Recipes come from professional cooks or honorable amateurs that put their receipes as NFTs on the dApp. (People can buy the NFT recipes)***
-We have a database of original recipes, ingredient lists, cooking instructions, pictures, etc.
+For incentivization (in addition to the locked ETH), we could implement some reward mechanisms:
+- Transform your picture into an NFT, so you can create an "NFT meal series" 
+- Mint a free recipe NFT for cooking a meal (special NFTs for regular users, for ex. cook 4 weeks in a row), the NFTs are created by professional chefs or honorable amateurs
+- Prize pool: Redistribute a share of the stakes from the users who failed to cook to the ones who succeeded for incentivization (get an additional amount of ETH back, depending on the "cooking success" rate)
 
-prize pool: redistribute the stakes from the users who failed to cook to the ones who suceeded for incentivization 
 
 **Social good**
-decide for the charitiy, collected money: make the money flow traceable for tranparency 
+- Provide a set of charities with a little description, where users can decide in advance, which one the would donate to in case they don't succeed to cook
+- Make the donations transparent on the blockchain to ensure they reach the charity 
 
 
 **Building a web3 cooking community**
-(We can use DAO for cooking competition with people voting for the best meal picture)***
-(We could later support blockhain-based supply chain management retailers that could provide the ingredients)***
-
-photo and recipee gallery, show-off your meals, maybe post them on a decentralized social network like lens 
-
+- Show-off your NFT- meals: Create a photo and recipe gallery, where users can vote for the best ones
+- Eventually even create a DAO around  blockchain & cooking enthusiasts 
+- Database of original recipes, ingredient lists, cooking instructions, etc.
 
 
 ## How to run the DApp locally using truffle/ganache:
