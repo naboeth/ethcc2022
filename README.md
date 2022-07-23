@@ -1,6 +1,6 @@
 # Cook at home @EthCChack
 
-** This DApp aims to motivate people to cook for themselves instead of ordering food - Lock some ETH and bet woth yourself! If you loose, your stake will be donated. ** 
+**This DApp aims to motivate people to cook for themselves instead of ordering food - Lock some ETH and bet woth yourself! If you loose, your stake will be donated.** 
 
 Team:
 
