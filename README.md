@@ -13,13 +13,14 @@ The project was built during the EthCC Hackathon 2022.
 Cooking is a form of self-care: You can take time for yourself or nourish your friends. However, many people tend to order food or go to eat outside, even though they would like to cook more often for themselves. Our DApps gives you a reason to do so: 
 - It's cheaper
 - Better for the environment
-- Improve your cooking skills
+- You can build up your cooking skills
+- You get to improve both your health and mental health!
 
 *We want to create a dApp that is focused on crypto-incentives with a "Cook-to-Earn" mindset. The more you cook, the more you earn. In this dApp we ask people to cook their own meals at home in exchange for a little cryptocurrencies. The goal is to use blockchain technology to ensure transparency, trust and traceability while encouraging people to have healthier diets and living habits, and share the love for great food.*
 
 ### What it does
 
-In a "bet with yourself" manner, users can deposit an amount of ETH in our DApp: Then they'll have one week to upload a valid photo of a plate they cooked. We ensure the photo is taken by the user by providing a random-generated code to write down and put it on the photo (we didn't manage to implement it for this Hackathon, but we would like to use an AI to check the validity of the code on the photos later). 
+In a "bet with yourself" manner, users can deposit an amount of ETH in our DApp: Then they'll have one week to upload a valid photo of a plate they cooked. We ensure the photo is taken by the user by providing a random-generated code to write down and put it on the photo (we didn't manage to implement it for this Hackathon, but we would like to use an AI to check the validity of the code and the meal on the photos later). 
 
 If the user does not upload a valid photo in time, their stake remains in the contract and will later be donated to a charity. 
 
@@ -52,12 +53,13 @@ If the user does not upload a valid photo in time, their stake remains in the co
 - Simplicity: We had a lot if ideas around the goal to motivate people cooking for themselves, but due to the limited time and programming experience, they had to be put on the roadmap 
 - Front-end: We had to remind ourselves to stay really simple
 - Back-end: The Difference between depositing money into a smart contract and an account, implement the time lock function / code generating and implement it on the front-end 
+- Verification/Proof-of-Cook: Creating randomness for generating a random code on-block is really difficult. It is actually better and more secure to do it off-chain and call it on the blockchain. But our security is not based on how difficult it is to find out the code, the AI recognition and verification method of taking both the meal and handwritten code are enough to ensure solid anti-fraud measures.
 
 ### Accomplishments that we're proud of
 
 - We're all web3 development beginners, so our primary goal was to learn and gain experiences, we definitely achieved that
 - We have come up with a model on how to motivate people to better take care of themselves through home cooking 
-- We grew together as a team and met a lot of inspiring people who gave feedback on the idea
+- We grew together as a team and met a lot of inspiring people who gave feedbacks on the idea
 
 ### What we learned
 
@@ -70,7 +72,7 @@ If the user does not upload a valid photo in time, their stake remains in the co
 
 **Photo verification**
 To make sure, the uploaded photo is a valid one (people actually cooked the meal by themselves), we will have to implement a verification mechanism: 
-- We use a simple code generator and ask people to handwrite the code and take a picture of both the meal and the code written. An AI will also detect and find out if the code is the one sent to the user
+- We use a simple code generator and ask people to handwrite the code and take a picture of both the meal and the code written. An AI will also detect and find out if the code is the one sent to the user.
 - _AI detection and recognition of the meal to compare it with original pictures from the recipe owners_
 - _EFIX, IPTC and XMP metadata of pictures to verify the picture origin and characteristics (+ check for any editing/photoshopping)_
 
