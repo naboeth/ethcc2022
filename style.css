@@ -1,0 +1,234 @@
+@font-face {
+	font-family: "SD Georgia Light";
+	src: url("./Assets/Fonts/SD\ Georgia\ Light.ttf");
+}
+
+@font-face {
+	font-family: "SD Georgia Light Italic";
+	src: url("./Assets/Fonts/SD_Georgia_Light_Italic_Demo.ttf");
+}
+
+@font-face {
+	font-family: "SF Arborcrest Light";
+	src: url("./Assets/Fonts/SF-Arborcrest-Light/SF Arborcrest Light.ttf");
+}
+
+@font-face {
+	font-family: "Garnet-Light";
+	src: url("./Assets/Fonts/garnett-font-family/Garnett-Light.ttf");
+}
+
+/* -------------------- */
+/* Shared */
+/* -------------------- */
+
+body {
+	font-family: "SF Arborcrest Light" sans-serif;
+}
+
+.bold-text,
+strong {
+	font-weight: 600;
+}
+
+.icon {
+	width: 1.9em;
+	height: 1.9rem;
+}
+
+a {
+	text-decoration: none;
+	color: #1d1d1d;
+}
+
+/* -------------------- */
+/* Header */
+/* -------------------- */
+
+.sticky {
+	position: sticky;
+	top: 0rem;
+	background-color: white;
+}
+
+.logo {
+	font-family: SD Georgia Light Italic;
+	font-style: oblique;
+	text-decoration: none;
+	color: black;
+	font-size: 1.8rem;
+}
+
+.navb {
+	font-family: "SF Arborcrest Light", sans-serif;
+	font-size: 2.7vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-bottom: black 1px solid;
+}
+
+.navb a {
+	text-decoration: none;
+	color: #1d1d1d;
+}
+
+.navb a:hover {
+	color: black;
+}
+
+.navelementcontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.navelement {
+	display: inline-block;
+}
+
+.navelement:hover {
+	font-weight: 900;
+	transform: scale(101%);
+}
+
+.navelement:hover .dot {
+	background-color: black;
+}
+
+.navelement:hover .nav-icon {
+	fill: black;
+}
+
+.dot {
+	border: 1px solid black;
+	border-radius: 9999px;
+	height: 0.7rem;
+	width: 0.7rem;
+	display: inline-block;
+	margin-left: 1rem;
+	margin-right: 0.3rem;
+}
+
+.searchfavoritefinderelement {
+	display: flex;
+	align-items: center;
+}
+
+.search-icon {
+	margin: 0.2rem;
+}
+
+.navelement .button {
+	display: flex;
+	justify-self: center;
+	align-items: center;
+}
+
+.button {
+	border: 1px solid black;
+	color: black;
+	border-radius: 9999px;
+	height: 1.8rem;
+	width: 0 auto;
+	background: none;
+	font-family: SF Arborcrest Light;
+	font-size: 2.9vh;
+	font-weight: bolder;
+}
+
+.button:hover {
+	background-color: black;
+}
+
+.button:hover > a {
+	color: white;
+}
+
+.button a {
+	font-weight: bolder;
+	text-decoration: none;
+	padding-left: 0.6rem;
+	padding-right: 0.6rem;
+}
+
+/* -------------------- */
+/* Hero */
+/* -------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+.herobutton {
+	border: 2px solid black;
+	color: black;
+	border-radius: 27px;
+	height: 2.5rem;
+	width: 0 auto;
+	background: none;
+	font-family: "SF Arborcrest Light";
+	font-size: 2.9vh;
+	font-weight: bolder;
+}
+
+.herobutton a {
+	font-weight: bolder;
+	text-decoration: none;
+	padding-left: 0.9rem;
+	padding-right: 0.9rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	border-bottom: 1px solid black;
+	font-family: "Garnet-Light";
+	src: url("./Assets/Fonts/garnett-font-family/Garnett-Light.ttf");
+}
+
+.hero-image {
+	height: 100vh;
+    100 vw;
+}
+
+.hero-text {
+	height: 100%;
+	padding-left: 1rem;
+	padding-right: 10rem;
+	padding-top: 1.7em;
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 3rem;
+	border-right: 1px solid black;
+	letter-spacing: -1px;
+	font-family: "Garnet-Light";
+	src: url("./Assets/Fonts/garnett-font-family/Garnett-Light.ttf");
+}
+
+.second-hero-text {
+	height: 100%;
+	padding-left: 1rem;
+	padding-right: 10rem;
+	padding-top: 1.7em;
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 3rem;
+	font-family: "Garnet-Light";
+	src: url("./Assets/Fonts/garnett-font-family/Garnett-Light.ttf");
+}
+
+/* -------------------- */
+/* Card Section */
+/* -------------------- */
+
+/* -------------------- */
+/* Footer */
+/* -------------------- */
