@@ -44,6 +44,76 @@ connect your wallet <br> <br> <br>
                                     </div>
                                     <div class="hero-text">
                                         cook/don't cook
+				    </button>
+                                    <button type="herobutton" class="button herobutton" onclick="printCode()">
+                                        <a href="#">Cooking challenge accepted!</a>
+                                    </button>
+
+                                    <script type="text/javascript">
+					    /*
+                                        async function loadWeb3() {
+                                            if (window.ethereum) {
+                                                window.web3 = new Web3(window.ethereum);
+                                            }
+                                        }*/
+
+                                        async function loadContract2() {
+                                            return await new window.web3.eth.Contract([
+                                            {
+                                                "inputs": [],
+                                                "name": "randCode",
+                                                "outputs": [
+                                                    {
+                                                        "internalType": "uint256",
+                                                        "name": "",
+                                                        "type": "uint256"
+                                                    }
+                                                ],
+                                                "stateMutability": "nonpayable",
+                                                "type": "function"
+                                            },
+                                            {
+                                                "inputs": [],
+                                                "name": "randomNb",
+                                                "outputs": [
+                                                    {
+                                                        "internalType": "uint256",
+                                                        "name": "",
+                                                        "type": "uint256"
+                                                    }
+                                                ],
+                                                "stateMutability": "nonpayable",
+                                                "type": "function"
+                                            },
+                                            {
+                                                "inputs": [],
+                                                "name": "code",
+                                                "outputs": [
+                                                    {
+                                                        "internalType": "uint256",
+                                                        "name": "",
+                                                        "type": "uint256"
+                                                    }
+                                                ],
+                                                "stateMutability": "view",
+                                                "type": "function"
+                                            }
+                                        ],
+                                        "0xd9145CCE52D386f254917e481eB44e9943F39138")
+
+                                        }
+
+                                        async function printCode() {
+                                            const code = await window.contract.methods.code().call();
+                                            console.log("code generarted");
+                                        }
+
+                                        async function load2() {
+                                            await loadWeb3();
+                                            window.contract = await loadContract2();
+                                        }
+                                       
+                                        load2();
                                                         </div>
 		</main>
 		<footer></footer>
