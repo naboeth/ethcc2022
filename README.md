@@ -74,8 +74,8 @@ If the user does not upload a valid photo in time, their stake remains in the co
 **Photo verification**
 To make sure, the uploaded photo is a valid one (people actually cooked the meal by themselves), we will have to implement a verification mechanism: 
 - We use a simple code generator and ask people to handwrite the code and take a picture of both the meal and the code written. An AI will also detect and find out if the code is the one sent to the user.
-- _AI detection and recognition of the meal to compare it with original pictures from the recipe owners_
-- _EFIX, IPTC and XMP metadata of pictures to verify the picture origin and characteristics (+ check for any editing/photoshopping)_
+- AI detection and recognition of the meal to compare it with original pictures from the recipe owners
+- EFIX, IPTC and XMP metadata of pictures to verify the picture origin and characteristics (+ check for any editing/photoshopping)
 
 These verification steps should ensure a satisfactory amount of fraud detection.
 
