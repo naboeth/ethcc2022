@@ -8,19 +8,15 @@ The project was built during the EthCC Hackathon 2022.
 
 ### Inspiration / Idea 
 
-// -> completed by Suzanne
-
 Cooking is a form of self-care: You can take time for yourself or nourish your friends. However, many people tend to order food or go to eat outside, even though they would like to cook more often for themselves. Our DApps gives you a reason to do so: 
 - It's cheaper
 - Better for the environment
 - You can build up your cooking skills
 - You get to improve both your health and mental health!
 
-*We want to create a dApp that is focused on crypto-incentives with a "Cook-to-Earn" mindset. The more you cook, the more you earn. In this dApp we ask people to cook their own meals at home in exchange for a little cryptocurrencies. The goal is to use blockchain technology to ensure transparency, trust and traceability while encouraging people to have healthier diets and living habits, and share the love for great food.*
-
 ### What it does
 
-In a "bet with yourself" manner, users can deposit an amount of ETH in our DApp: Then they'll have one week to upload a valid photo of a plate they cooked. We ensure the photo is taken by the user by providing a random-generated code to write down and put it on the photo (we didn't manage to implement it for this Hackathon, but we would like to use an AI to check the validity of the code and the meal on the photos later). 
+In a "bet with yourself" manner, users can deposit an amount of ETH in our DApp: Then they'll have one week to upload a valid photo of a plate they cooked. We ensure the photo is taken by the user by providing a random-generated code to write down and put it on the photo _(we didn't manage to implement the code generation and the photo verification for this Hackathon, but we would have liked to use an AI to check the validity of the code and the meal on the photos later)._
 
 If the user does not upload a valid photo in time, their stake remains in the contract and will later be donated to a charity. 
 
@@ -34,25 +30,29 @@ If the user does not upload a valid photo in time, their stake remains in the co
 
 ### Resources
 
-- _Link to the DApp: [https://github.com/naboeth/ethcc2022](https://github.com/naboeth/ethcc2022) (you will have to switch to the rinkeby testnet to connect your wallet and have some rinkeby test ether, you can get some here: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/))_
-- _Recorded video using the DApp:_ 
-- _Presentation of the idea:_
-- _Deployed contracts:_
+- Presentation of the idea: https://www.canva.com/design/DAFHOlnkWrQ/nhw1ovnoRdbuAJ3Hxn_KkA/view?utm_content=DAFHOlnkWrQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+- Deployed networks (contract addresses): 
+ Ropsten (0x458d9cD3F0f9A7A9AA31C5A5Ace17515fD52990e)
+ Polygon mumbai testnet (0x9A11dDB3336FDb7052b0399b065eea1Fc2f2C37D)
+ Cronos testnet (0x9A11dDB3336FDb7052b0399b065eea1Fc2f2C37D)
+ Neon testnet (0x67a520C359bc6ec8C4224dcB0D79426398BF93D8)
+ Celo Alfajores testnet (0x9A11dDB3336FDb7052b0399b065eea1Fc2f2C37D)
+
 
 ### How we built it
 
 - The DApp was built on Ethereum with Truffle/Ganache and Infura 
-- _We deployed the contracts to several chains:_  
-- _We implemented a time lock funtion in our contract (which counts Ethereum blocks) to time the seven days to submit a photo_ 
-- Built-in function to generate a random code by using blockchain-data
-- The photos are uploaded to IPFS/Filecoin 
+- The contracts are written in Solidity, while the front-end relys on HTML/CSS/JS
+- We deployed the contracts to several test chains: Ropsten, Polygon, Cronos, Neon and Celo
+- We tried to implement a time lock funtion in our contract to time the seven days to submit a photo (we did not manage to implement it in the front-end properly)
+- Function to generate a random code by using blockchain-data (we did not manage to implement it in the front-end properly)
 
 ### Challenges we ran into
 
 - Punishment or incentivization: How do we motivate most and would a user like to deposit actual money? 
 - Simplicity: We had a lot if ideas around the goal to motivate people cooking for themselves, but due to the limited time and programming experience, they had to be put on the roadmap 
 - Front-end: We had to remind ourselves to stay really simple
-- Back-end: The Difference between depositing money into a smart contract and an account, implement the time lock function / code generating and implement it on the front-end 
+- Back-end: The Difference between depositing money into a smart contract and an account, implementing the time lock function / code generating and enspecially linking it on the front-end 
 - Verification/Proof-of-Cook: Creating randomness for generating a random code on-block is really difficult. It is actually better and more secure to do it off-chain and call it on the blockchain. But our security is not based on how difficult it is to find out the code, the AI recognition and verification method of taking both the meal and handwritten code are enough to ensure solid anti-fraud measures.
 
 ### Accomplishments that we're proud of
@@ -65,8 +65,9 @@ If the user does not upload a valid photo in time, their stake remains in the co
 
 - Divide tasks and make a schedule
 - Presenting our project to others 
-- How to put data on IPFS/Filecoin 
-- How to implement random-number generation / time lock functions in Solidity 
+- How to put data on IPFS/Filecoin (we tried it for the photo upload)
+- Use truffle as a testing/deployment framework and deploy on different chains
+- Research on how to implement random-number generation / time lock functions in Solidity 
 
 ### Roadmap
 
@@ -133,7 +134,5 @@ truffle migrate
 npm run dev
 ```
 
-8. If this doesn't work, try to open the "index.html" file with live server.
-
-
+8. If this doesn't work, try to open the "index.html" file with live server
 
