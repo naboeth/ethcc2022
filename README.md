@@ -44,6 +44,7 @@ If the user does not upload a valid photo in time, their stake remains in the co
  Cronos testnet (0x9A11dDB3336FDb7052b0399b065eea1Fc2f2C37D)
  Neon testnet (0x67a520C359bc6ec8C4224dcB0D79426398BF93D8)
  Celo Alfajores testnet (0x9A11dDB3336FDb7052b0399b065eea1Fc2f2C37D)
+ Gnosis chain (0x9A11dDB3336FDb7052b0399b065eea1Fc2f2C37D)
 
 
 ### How we built it
