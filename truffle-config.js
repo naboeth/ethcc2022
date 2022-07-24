@@ -103,7 +103,34 @@ module.exports = {
       port: 8545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
     },
-  },
+
+    cronosTestnet: {
+      provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://cronos-testnet-3.crypto.org:8545`),
+      network_id: "*",       // Cronos's testnet id
+      skipDryRun: true 
+      },
+
+    neonlabs: {
+      provider: () => new HDWalletProvider(process.env.MNEMONIC,`https://proxy.devnet.neonlabs.org/solana`),
+      // from: "0xA7fe5Ad7653b30c2E3C8f5f904cfc16f5751A333", // Specify public key corresponding to private key defined above
+      network_id: "*",
+      gas: 1000000000,
+      gasPrice: 243065000000,
+    },
+
+    testnet: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://alfajores-forno.celo-testnet.org")
+      },
+      network_id: 44787,
+      gas: 20000000      
+    }
+ },
+  
+
+
+
+
 
 
 
