@@ -1,22 +1,7 @@
-@font-face {
-	font-family: "SD Georgia Light";
-	src: url("./Assets/Fonts/SD\ Georgia\ Light.ttf");
-}
-
-@font-face {
-	font-family: "SD Georgia Light Italic";
-	src: url("./Assets/Fonts/SD_Georgia_Light_Italic_Demo.ttf");
-}
-
-@font-face {
-	font-family: "SF Arborcrest Light";
-	src: url("./Assets/Fonts/SF-Arborcrest-Light/SF Arborcrest Light.ttf");
-}
-
-@font-face {
-	font-family: "Garnet-Light";
-	src: url("./Assets/Fonts/garnett-font-family/Garnett-Light.ttf");
-}
+/* font-family: 'Bungee', cursive;
+font-family: 'Bungee Hairline', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Raleway', sans-serif;; */
 
 /* -------------------- */
 /* Shared */
@@ -24,6 +9,7 @@
 
 body {
 	font-family: "SF Arborcrest Light" sans-serif;
+	background-color: #ffede1;
 }
 
 .bold-text,
@@ -48,19 +34,21 @@ a {
 .sticky {
 	position: sticky;
 	top: 0rem;
-	background-color: white;
+	background-color: #ffede1;
 }
 
 .logo {
-	font-family: SD Georgia Light Italic;
+	font-family: "Bungee Shade";
 	font-style: oblique;
 	text-decoration: none;
-	color: black;
-	font-size: 1.8rem;
+	color: #08998a;
+	font-size: 4rem;
+	display: inline-block;
+    list-style-type: none;
+}
 }
 
 .navb {
-	font-family: "SF Arborcrest Light", sans-serif;
 	font-size: 2.7vh;
 	display: flex;
 	justify-content: space-between;
@@ -68,7 +56,6 @@ a {
 	padding: 0.4rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	border-bottom: black 1px solid;
 }
 
 .navb a {
@@ -105,7 +92,7 @@ a {
 }
 
 .dot {
-	border: 1px solid black;
+	border: 1px #e67039;
 	border-radius: 9999px;
 	height: 0.7rem;
 	width: 0.7rem;
@@ -130,15 +117,23 @@ a {
 }
 
 .button {
-	border: 1px solid black;
-	color: black;
-	border-radius: 9999px;
+	border-radius: 100vw;
 	height: 1.8rem;
 	width: 0 auto;
 	background: none;
-	font-family: SF Arborcrest Light;
+	font-family: Raleway;
 	font-size: 2.9vh;
-	font-weight: bolder;
+	color: #ff6e0c;
+	box-shadow: 0 2px 2px #888888;
+	transition: color 0.3s, background-image 0.5s, ease-in-out;
+
+	/* background-color: #ffddc7;
+	border: none;
+	color: #ff6e0c;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px; */
 }
 
 .button:hover {
@@ -151,70 +146,88 @@ a {
 
 .button a {
 	font-weight: bolder;
-	text-decoration: none;
 	padding-left: 0.6rem;
 	padding-right: 0.6rem;
+	color: #ff6e0c;
 }
 
 /* -------------------- */
 /* Hero */
 /* -------------------- */
 
-* {
-	box-sizing: border-box;
+.walletbutton {
+	border-radius: 27px;
+	height: 2.8rem;
+	width: 0 auto;
+	border: none;
+	font-family: "SF Arborcrest Light";
+	color: white;
+	font-size: 2.9vh;
+	font-weight: bolder;
+	margin-left: auto;
+	margin-right: auto;
+	display: in-line block;
+	padding: 10px;
+	color: #ff6e0c;
 }
 
 .herobutton {
-	border: 2px solid black;
-	color: black;
-	border-radius: 27px;
-	height: 2.5rem;
-	width: 0 auto;
+	border-radius: 50px;
+	border: none;
+	height: 100px;
+	width: 100px;
 	background: none;
 	font-family: "SF Arborcrest Light";
-	font-size: 2.9vh;
+	font-size: 4.5vh;
+	color: #ff6e0c;
 	font-weight: bolder;
+	display: flex row;
+	justify: center;
 }
 
 .herobutton a {
 	font-weight: bolder;
-	text-decoration: none;
+	border-radius: 50%;
 	padding-left: 0.9rem;
 	padding-right: 0.9rem;
+	display: block;
 }
 
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	height: 100vh;
-	width: 100vw;
 	padding: 0;
-	border-bottom: 1px solid black;
 	font-family: "Garnet-Light";
 	src: url("./Assets/Fonts/garnett-font-family/Garnett-Light.ttf");
-}
-
-.hero-image {
-	height: 100vh;
-    100 vw;
 }
 
 .hero-text {
-	height: 100%;
 	padding-left: 1rem;
-	padding-right: 10rem;
-	padding-top: 1.7em;
+	padding-top: 10rem;
+	/* position: fixed; */
 	font-size: 2.5rem;
 	font-weight: 300;
 	line-height: 3rem;
-	border-right: 1px solid black;
+	display: block;
+	text-align: center;
+	border-right: 1px white;
 	letter-spacing: -1px;
-	font-family: "Garnet-Light";
-	src: url("./Assets/Fonts/garnett-font-family/Garnett-Light.ttf");
+	color: #08998A;
+	font-family: "Bungee";
+	text-shadow: 0.5px 0.5px 1px brown;
+}
+
+img {
+	height: 150px;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	object-fit: contain;
 }
 
 .second-hero-text {
-	height: 100%;
 	padding-left: 1rem;
 	padding-right: 10rem;
 	padding-top: 1.7em;
@@ -232,3 +245,79 @@ a {
 /* -------------------- */
 /* Footer */
 /* -------------------- */
+
+*,
+:after,
+:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	height: 100vh;
+	width: 100%;
+	display: table;
+}
+section.ok {
+	height: 100vh;
+}
+
+.scroll-down {
+	opacity: 1;
+	-webkit-transition: all 0.5s ease-in 3s;
+	transition: all 0.5s ease-in 3s;
+}
+
+.scroll-down {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -16px;
+	display: block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid black;
+	background-size: 14px auto;
+	border-radius: 50%;
+	z-index: 2;
+	-webkit-animation: bounce 2s infinite 2s;
+	animation: bounce 2s infinite 2s;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.scroll-down:before {
+	position: absolute;
+	top: calc(50% - 8px);
+	left: calc(50% - 6px);
+	transform: rotate(-45deg);
+	display: block;
+	width: 12px;
+	height: 12px;
+	content: "";
+	border: 2px solid black;
+	border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+	0%,
+	100%,
+	20%,
+	50%,
+	80% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	60% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
