@@ -8,6 +8,13 @@ The project was built during the EthCC Hackathon 2022.
 
 ### Inspiration / Idea 
 
+_"About 17% of global food production may go wasted, according to the UN Environment Programme's (UNEP) Food Waste Index Report 2021, with 61% of this waste coming from households."_
+
+Time and time again we hear tales from the busy tech worker who in a moment of hopeful delusion buys 
+a cart full of groceries on a Sunday only to reach the following weekend with a fridge full of rotten food and a sizeable Uber Eats bill. 
+
+Thinking about how we could creatively combat food waste in web3, our team arrived at cook3: a dApp that helps to incentivize home cooking.
+
 Cooking is a form of self-care: You can take time for yourself or nourish your friends. However, many people tend to order food or go to eat outside, even though they would like to cook more often for themselves. Our DApps gives you a reason to do so: 
 - It's cheaper
 - Better for the environment
