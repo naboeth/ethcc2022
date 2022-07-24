@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/naboeth/ethcc2022#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.7.1"
+    "@openzeppelin/contracts": "^4.7.1",
+    "@truffle/hdwallet-provider": "^2.0.12"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
