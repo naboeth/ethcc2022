@@ -5,7 +5,8 @@ async function loadWeb3() {
   }
 }
 
-contractAddress = "0xd9145CCE52D386f254917e481eB44e9943F39138";
+//contractAddress = "0xd9145CCE52D386f254917e481eB44e9943F39138";
+contractAddress = "0x6884a59bC003dEd64145BCec9b497D6587511702";
 
 ABI = [
   {
@@ -98,4 +99,12 @@ async function refund() {
     ],
   });
   console.log("Payment sent");
+}
+
+load();
+async function printCode() {
+  console.log("reading");
+  const code = await window.contract.methods.randCode().call();
+  console.log("code generated");
+  console.log(code);
 }
