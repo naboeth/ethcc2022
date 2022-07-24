@@ -68,7 +68,7 @@ async function getCurrentAccount() {
 async function sendPayment() {
   const account = await getCurrentAccount();
   const amount = "0.0032"; //only fixed amount at the moment
-  const amountToSend = "3200000000000000";
+  const amountToSend = "3200000000000";
   //const amountToSend = web3.utils.toWei(amount, "ether"); // Convert to wei value
   await ethereum.request({
     method: "eth_sendTransaction",
@@ -86,7 +86,7 @@ async function sendPayment() {
 async function refund() {
   const account = await getCurrentAccount();
   const amount = "0.0032"; //only fixed amount at the moment
-  const amountToSend = "32000000";
+  const amountToSend = "3200000000000";
   //const amountToSend = web3.utils.toWei(amount, "ether"); // Convert to wei value
   await ethereum.request({
     method: "eth_sendTransaction",
