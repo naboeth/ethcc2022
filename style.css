@@ -179,6 +179,7 @@ a {
 	background: none;
 	font-family: "SF Arborcrest Light";
 	font-size: 4.5vh;
+    padding-between: 50px;
 	color: #ff6e0c;
 	font-weight: bolder;
 	display: flex row;
